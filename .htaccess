@@ -1,0 +1,5 @@
+ <IfModule mod_negotiation.c>
+        RewriteEngine On
+        RewriteCond %{REQUEST_URI} !^public
+        Rewriterule ^(.*)$ public/$1 [L]
+    </IfModule>
